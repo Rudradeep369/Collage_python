@@ -1,0 +1,25 @@
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+A = {19, 22, 24, 20, 25, 26}
+B = {19, 22, 20, 25, 26, 24, 28, 27}
+print("Length of IT Companies:", len(it_companies))
+it_companies.add('Twitter')
+print("IT Companies after adding Twitter:", it_companies)
+it_companies.update(['Tesla', 'Netflix', 'Uber'])
+print("IT Companies after adding multiple:", it_companies)
+it_companies.remove('Tesla')
+print("IT Companies after removing Tesla:", it_companies)
+join_AB = A.union(B)
+print("Join A and B:", join_AB)
+intersection_AB = A.intersection(B)
+print("Intersection of A and B:", intersection_AB)
+is_subset = A.issubset(B)
+print("Is A subset of B:", is_subset)
+are_disjoint = A.isdisjoint(B)
+print("Are A and B disjoint:", are_disjoint)
+join_A_with_B = A.union(B)
+join_B_with_A = B.union(A)
+print("A union B:", join_A_with_B)
+print("B union A:", join_B_with_A)
+symmetric_diff_AB = A.symmetric_difference(B)
+print("Symmetric Difference of A and B:", symmetric_diff_AB)
+del A, B
